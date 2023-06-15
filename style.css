@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@200;400&display=swap');
+
+*,
+::before,
+::after{
+    box-sizing: inherit;    
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 300px;
+    border: 1px solid none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10em 0;
+}
+
+.main-container section header h1{
+    font-size: 2em;
+}
+
+.main-container section p{
+    font-size: .8em;
+    font-weight: 200;
+    letter-spacing: .1em;
+}
+
+.main-container section .sedan{
+    background-color: #E28525;
+    padding: 2em 1.5em;
+}
+
+.main-container section button{
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    border: none;
+}
+
+.main-container section .sedan button{
+    color: #E28525;
+    font-weight: bold;
+}
+
+.main-container section .suvs button{
+    color: #016972;
+    font-weight: bold;
+}
+
+.main-container section .luxury button{
+    color: #00403F;
+    font-weight: bold;
+}
+
+.main-container section button:hover{
+    cursor: pointer;
+}
+
+.main-container section button:active{
+    color: #fff;
+    font-weight: normal;
+    background-color: #ffffff00;
+    border: 2px solid #fff;
+    padding: .89em 1.5em;
+}
+
+.main-container section .suvs{
+    background-color: #016972;  
+    padding: 2em 1.5em; 
+}
+
+.main-container section .luxury{
+    background-color: #00403F;
+    padding: 2em 1.5em;
+}
+
+@media(min-width:376px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+    }
+
+    .main-container section button{
+        padding: 1em 1.5em;
+        margin-top: 3em;
+    }
+}
